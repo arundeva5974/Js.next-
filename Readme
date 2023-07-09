@@ -1,2 +1,8 @@
-Download Jsnext sample code from others Repositories.
-I create one directory in my git bash mkdir
+Download Jsnext sample code from others Repositories and save it to my local machine.
+open git bash then check pwd
+select the file where the code is stored using CD next
+git init
+git add.
+git commit -m "Added"
+git remote add origin 
+
