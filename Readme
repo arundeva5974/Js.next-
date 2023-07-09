@@ -1,1 +1,41 @@
+Download Jsnext sample code from others Repositories and save it to my local machine.
+open git bash then check pwd
+select the file where the code is stored using CD next
+git init
+git add.
+git commit -m "Added"
+git remote add origin https://github.com/arundeva5974/Js.next-.git
+git push -u origin main
 
+Launch Ec2 instance (ubuntu server)
+To connect the instance in putty using public ip address and ppk file.
+Install terraform in Ec2 using these commands (wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform)
+AWS CONFIGURE
+Access key ID and Secret access key
+In terraform create a file as amplify.tf
+open the amplify.tf file using vim command
+inside the file wirte a Provision Amplify infrastructure
+
+provider "aws"{
+    access_key = "AKIAT4DNRGLLRHDQIYP7"
+  secret_key = "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"
+  region     = "us-east-1"
+}
+
+resource "aws_amplify_app" "myppjs" {
+    name = "my_jsnext"
+    repository = "https://github.com/arundeva5974/Js.next-.git"
+    access_token = "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"
+
+terraform init
+terraform validate
+terraform plan
+terraform apply -y
+
+Once the amplify provisioned. go to the amplify console.
+click on my_jsnext
+In host a web app select Github - connect branch
+Add a repository branch where you stored code - Select branch -  Next
+Build setting - 
