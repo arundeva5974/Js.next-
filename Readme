@@ -38,4 +38,6 @@ Once the amplify provisioned. go to the amplify console.
 click on my_jsnext
 In host a web app select Github - connect branch
 Add a repository branch where you stored code - Select branch -  Next
-Build setting - 
+Build setting - Edit - Next
+Connect Branch
+https://main.diu47uiw039w.amplifyapp.com/
