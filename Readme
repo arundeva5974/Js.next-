@@ -27,7 +27,7 @@ provider "aws"{
 resource "aws_amplify_app" "myppjs" {
     name = "my_jsnext"
     repository = "https://github.com/arundeva5974/Js.next-.git"
-    access_token = "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"
+    access_token = "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"
 
 terraform init
 terraform validate
