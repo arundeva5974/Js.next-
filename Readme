@@ -1,6 +1,6 @@
 Download Jsnext sample code from others Repositories and save it to my local machine.
 open git bash then check pwd
-select the file where the code is stored using CD next
+select the file where the code is stored using CD next   #Next is a file name
 git init
 git add.
 git commit -m "Added"
@@ -27,12 +27,13 @@ provider "aws"{
 resource "aws_amplify_app" "myppjs" {
     name = "my_jsnext"
     repository = "https://github.com/arundeva5974/Js.next-.git"
-    access_token = "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"
+    access_token = "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"
 
 terraform init
 terraform validate
 terraform plan
-terraform apply -y
+terraform apply
+yes
 
 Once the amplify provisioned. go to the amplify console.
 click on my_jsnext
